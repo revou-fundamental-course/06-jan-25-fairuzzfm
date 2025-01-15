@@ -5,12 +5,58 @@
 }
 
 .logo-icon {
-    border: 1px solid;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+}
+
+.left-rounded {
+    border-radius: 12px 0 0 12px;
+}
+
+.right-rounded {
+    border-radius: 0 12px 12px 0;
+}
+
+nav>a {
+    border: 1px solid black;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
 }
 
 .banner-image {
-    border: #333;
-    height: 400px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-image-1 {
+    background-image: url(https://picsum.photos/500);
+}
+.banner-image-2 {
+    background-image: url(https://picsum.photos/501);
+}
+.banner-image-3 {
+    background-image: url(https://picsum.photos/502);
+}
+
+.content {
+    height: 500px;
+}
+
+footer {
+    text-align: center;
+}
+/* CSS YANG DIJALANKAN DIUKURAN LAYAR KURANG DARI 480PX */
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+    }
 }
