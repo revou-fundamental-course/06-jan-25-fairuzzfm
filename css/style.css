@@ -1,3 +1,5 @@
+/* Tampilan POP UP */
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -32,7 +34,7 @@ nav>a {
 }
 
 .banner-image {
-    height: 600px;
+    height: 800px;
     background-size: cover;
     background-position: center;
 }
@@ -65,6 +67,15 @@ nav>a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-top: 10px;
 }
+.profile-picture {
+    display: flex;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/faiz.jpg?raw=true);
+    background-size: cover;
+}
 
 .portfolio {
     /* display: flex;
@@ -75,6 +86,20 @@ nav>a {
     margin-top: 10px;
 }
 
+.message-us {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #fff; 
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
+}
+/* .main-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
 footer {
     background-color: #fff; 
     padding: 50px;
@@ -84,57 +109,31 @@ footer {
 }
 /* CSS YANG DIJALANKAN DIUKURAN LAYAR KURANG DARI 480PX */
 @media only screen and (max-width: 480px) {
-.main-header {
-    flex-direction: column;
+    .main-header {
+        flex-direction: column;
+    }
 }
-}
+
 body { 
     font-family: 'Helvetica Neue', sans-serif, sans-serif; 
     margin: 0; 
     padding: 0; 
-    background-color: #f4f4f4; 
+    background-color: #ffffff; 
 }
-.content {
-    height: 500px;
-}
-.container { 
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    height: 100vh; 
-} 
-.form { 
+
+.form {
     display: flex;
     flex-direction: column;
     background-color: #fff; 
-    padding: 50px; 
+    padding: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    /* margin-right: 20px;  */
-} 
-.form input, .form textarea { 
-    display: flex;
-    flex-direction: column;
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-} 
-.form button { 
-    display: block; 
-    width: 100%; 
-    padding: 10px; 
-    border: none; 
-    background-color: #333; 
-    color: white; 
-    border-radius: 4px; 
-    cursor: pointer; 
-} 
-.display { 
+    margin-top: 10px;
+}
+.display {
     display: flex;
     flex-direction: column;
     background-color: #fff; 
-    padding: 20px; 
+    padding: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    width: 50%; 
+    margin-top: 10px;
 }

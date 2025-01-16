@@ -1,10 +1,31 @@
 /*File js*/
 console.log('Hello World!');
 
-// Fungsi validasi form
+document.getElementById('submit-nama').addEventListener('click', changeUserName);
+
+function openForm() {
+document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+document.getElementById("myForm").style.display = "none";
+}
+
+// Fungsi untuk mengubah nama pengguna
+function changeUserName() {
+    let username = document.getElementById('user-name').value;
+    if (username == "") {
+        alert('Name must be filled out');
+    } else {
+        document.getElementById('user-name').innerText = `${username}! `;
+    }
+}
+
+
+//Fungsi validasi form
 // function formValidation() {
 
-//     let name = document.getElementById('name-input').value;
+//     let name = document.getElementById('name').value;
 //     console.log('Form Validation has been called');
 //     if (name == "") {
 //         //Kondisi jika name kosong
@@ -12,7 +33,7 @@ console.log('Hello World!');
 //     }
 //     else {
 //         //display result name
-//         document.getElementById('result-form').innerHTML =  nameInput;
+//         document.getElementById('result-form').innerHTML =  name;
 //     }
 
 // }
