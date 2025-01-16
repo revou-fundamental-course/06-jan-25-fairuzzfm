@@ -1,10 +1,24 @@
 /*File js*/
 console.log('Hello World!');
 
+function submitForm() { 
+    const currentTime = new Date().toString(); 
+    const name = document.getElementById('name').value; 
+    const tanggalLahir = document.getElementById('tanggal_lahir').value; 
+    const jenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value; 
+    const pesan = document.getElementById('pesan').value; 
+    document.getElementById('currentTime').textContent = currentTime; 
+    document.getElementById('displayNama').textContent = name; 
+    document.getElementById('displayTanggalLahir').textContent = tanggalLahir; 
+    document.getElementById('displayJenisKelamin').textContent = jenisKelamin; 
+    document.getElementById('displayPesan').textContent = pesan; 
+}
+
+
 document.getElementById('submit-nama').addEventListener('click', changeUserName);
 
 function openForm() {
-document.getElementById("myForm").style.display = "block";
+document.getElementById("myForm").style.display = "none";
 }
 
 function closeForm() {
@@ -68,16 +82,3 @@ function changeBackground() {
 }
 
 setInterval(nextBanner, 3000);
-
-function submitForm() { 
-    const currentTime = new Date().toString(); 
-    const name = document.getElementById('name').value; 
-    const tanggalLahir = document.getElementById('tanggal_lahir').value; 
-    const jenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value; 
-    const pesan = document.getElementById('pesan').value; 
-    document.getElementById('currentTime').textContent = currentTime; 
-    document.getElementById('displayNama').textContent = name; 
-    document.getElementById('displayTanggalLahir').textContent = tanggalLahir; 
-    document.getElementById('displayJenisKelamin').textContent = jenisKelamin; 
-    document.getElementById('displayPesan').textContent = pesan; 
-}
