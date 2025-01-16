@@ -32,38 +32,71 @@ nav>a {
 }
 
 .banner-image {
-    height: 450px;
+    height: 600px;
     background-size: cover;
     background-position: center;
 }
 
 .banner-image-1 {
-    background-image: url(https://picsum.photos/500);
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/mylogo.png?raw=true);
 }
 .banner-image-2 {
-    background-image: url(https://picsum.photos/501);
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/Nasaok.jpg?raw=true);
 }
 .banner-image-3 {
-    background-image: url(https://picsum.photos/502);
+    background-image: url(hhttps://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/adel.png?raw=true);
+}
+.banner-image-4 {
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/RX7.png?raw=true);
+}
+.banner-image-5 {
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/RAPTOR.png?raw=true);
+}
+.home-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.our-profile {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #fff; 
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
 }
 
-.content {
-    height: 500px;
+.portfolio {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #fff; 
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
 }
 
 footer {
+    background-color: #fff; 
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
     text-align: center;
 }
 /* CSS YANG DIJALANKAN DIUKURAN LAYAR KURANG DARI 480PX */
 @media only screen and (max-width: 480px) {
-    .main-header {
-        flex-direction: column;
-    }
+.main-header {
+    flex-direction: column;
+}
 }
 body { 
-    font-family: Arial, sans-serif; 
-    margin: 0; padding: 0; background-color: #f4f4f4; 
-} 
+    font-family: 'Helvetica Neue', sans-serif, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+.content {
+    height: 500px;
+}
 .container { 
     display: flex;
     justify-content: flex-start; 
@@ -72,13 +105,15 @@ body {
 } 
 .form { 
     display: flex;
+    flex-direction: column;
     background-color: #fff; 
-    padding: 20px; 
+    padding: 50px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    margin-right: 20px; 
+    /* margin-right: 20px;  */
 } 
 .form input, .form textarea { 
-    display: block; 
+    display: flex;
+    flex-direction: column;
     width: 100%; 
     padding: 10px; 
     margin-bottom: 10px; 
@@ -96,6 +131,8 @@ body {
     cursor: pointer; 
 } 
 .display { 
+    display: flex;
+    flex-direction: column;
     background-color: #fff; 
     padding: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
