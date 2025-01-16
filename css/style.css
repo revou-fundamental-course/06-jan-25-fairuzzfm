@@ -8,7 +8,7 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-image: url("C:\xampp\RevoU\06-jan-25-fairuzzfm\css\asset\fairuz_logo.jpg");
+    background-image: url(https://github.com/revou-fundamental-course/06-jan-25-fairuzzfm/blob/main/css/asset/logo.png?raw=true);
     background-size: cover;
 }
 
@@ -59,4 +59,45 @@ footer {
     .main-header {
         flex-direction: column;
     }
+}
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; padding: 0; background-color: #f4f4f4; 
+} 
+.container { 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+} 
+.form { 
+    display: flex;
+    background-color: #fff; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-right: 20px; 
+} 
+.form input, .form textarea { 
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+} 
+.form button { 
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    background-color: #333; 
+    color: white; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+.display { 
+    background-color: #fff; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
 }
